@@ -91,12 +91,12 @@ body {
     transform: scale(.95);
     
 }
-.container {
+/* .container {
     padding: 0 15px;
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
-}
+} */
 
 @media (max-width: 576px) {
     .section-top_h3 {
@@ -260,6 +260,11 @@ body {
     font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
+}
+
+.section-news a {
+    text-decoration: none;
+    color: #000;
 }
 
 .section-news_h1_page2 {
