@@ -16,7 +16,7 @@ body {
 
 .size-fixer {
     max-width: 1620px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 .size-fixer_page2 {
@@ -24,8 +24,7 @@ body {
     margin: 0 auto;
 }
 
-/*index page start*/
-
+/*Main page(index.html) start*/
 /*header-page start*/
 .header-page {
     position: fixed;
@@ -154,8 +153,8 @@ body {
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
-
 }
+
 .section-top_div {
     position: relative; 
 }
@@ -188,13 +187,12 @@ body {
     transition: all .2s;
 }
 .section-top_button:hover {
-    background-color: #ff422d;
+    background-color: #ff3620;
 }
 
 .section-top_button:active {
     opacity: 0.9;
-    transform: scale(.95);
-    
+    transform: scale(.95); 
 }
 
 .container {
@@ -226,23 +224,23 @@ body {
 
 @media (min-width: 1920px) {
     .section-top_h1 {
-        font-size: 124px;
-        margin-bottom: 40px;
+        font-size: 134px;
+        margin-bottom: 60px;
     }
     .section-top_h3 { 
-        font-size: 64px;
-        margin-bottom: 100px;
+        font-size: 74px;
+        margin-bottom: 120px;
     }
     .section-top_button {
-        width: 300px;
-        height: 60px;
-        font-size: 24px;
+        width: 320px;
+        height: 65px;
+        font-size: 28px;
+    }
+    .container {
+        width: 1400px;
     }
 }
-
 /*section-top end*/
-
-
 
 /*section-news start*/
 .section-news {
@@ -253,7 +251,7 @@ body {
 }
 
 .section-news_page2 {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .section-news_h1 {
@@ -270,13 +268,9 @@ body {
     margin: 0 10%;
 }
 
-.section-news_h1_page2 {
-    margin-bottom: 60px;
-}
-
 .section-news_main_div {
     display: flex;
-    margin: 0;
+    margin: 0 10px;
     justify-content: space-between;
     border-radius: 20px;
     box-shadow: 0px 0px 10px .1px gray;
@@ -289,11 +283,11 @@ body {
     max-width: 1060px;
 }
 
-
 .section-news_img {
     float:left;
     width: 45%;
     margin: 10px 20px 10px 0;
+    border-radius: 20px;
 }
 
 .section-news_div2 {
@@ -306,11 +300,20 @@ body {
 .section-news_div2_h2 {
     font-size: 30px;
     font-style: italic;
-    margin: 0 auto;
+    margin: 6px 0px auto;
+
+}
+
+.section-news_div2 span {
+    display: flex;
+    justify-content: end;
+    margin-top: 6px;
+    color: #b0b0b0;
 }
 
 .section-news_div2 p {
     font-size: 20px;
+    margin-top: 10px;
     text-align: justify;
     text-indent: 10mm;
     line-height: 1.25;
@@ -331,8 +334,14 @@ body {
         font-size: 20px;
         margin-top: 10px;
     }
+    .section-news_div2 span {
+        font-size: 12px;
+    }
     .section-news_div2 p {
         font-size: 18px;
+    }
+    .section-news_page2 { 
+        margin-top: 80px;
     }
 }
 /*section-news end*/
@@ -363,7 +372,6 @@ body {
     width: 100%;
     padding: 0px 10px;
 }
-
 
 .section-popular_element_link {
     text-decoration: none;
@@ -421,10 +429,10 @@ body {
     }
 }
 
-@media(min-width: 3840px) {
+@media(min-width: 1920px) {
     .section-popular_catalog {
-        max-width: 3000px;
-     }
+        max-width: 1600px;
+    }
 }
 /*section-popular end*/
 
@@ -516,13 +524,14 @@ input[name="r"] {
     text-align: center;
     margin: 0px auto;
     padding: 0 20px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .section-about_h2 {
     color: #fff;
     font-size: 30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 0px;
 }
 
 @media (max-width: 880px) {
@@ -531,13 +540,13 @@ input[name="r"] {
     }
     .slider {
         width: 100%;
-        height: 380px;
+        height: 340px;
     }
     .navigation {
         bottom: 30px;
     }
     .slide{
-        height: 360px;
+        height: 340px;
     }
     .section-about_divForText {
         width: 100%;
@@ -763,12 +772,11 @@ iframe {
     }
 }
 /*popup-book-info end*/
-/*page1_main end*/
+/*Main page(index.html) end*/
 
 /*page3_colection start*/
 .section-search {
     margin-top: 120px;
-    margin-bottom: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -778,7 +786,7 @@ iframe {
     border: 0;
     border-radius: 10px;
     background-color: #D9D9D9;
-    width: 35%;
+    width: 45%;
     height: 34px;
     text-align: center;
     font-size: 16px;
@@ -789,25 +797,26 @@ iframe {
     color: transparent;
 }
 
-.section-search_button {
-    border: 0;
-    border-radius: 10px;
-    height: 30px;
-}
-
 .section-books {
     margin-top: 60px;
 }
 
 @media(max-width:545px) {
     .section-search_input {
-        width: 60%;
+        width: 70%;
+    }
+    .section-books {
+        margin-top: 50px;
+    }
+    .section-search {
+        margin-top: 100px;
+        margin-bottom: 0px;
     }
 }
 
 @media(min-width:1920px) {
     .section-search_input {
-        max-width: 1200px;
+        max-width: 800px;
     }
 }
 /*page3_colection end*/
@@ -862,7 +871,7 @@ iframe {
 }
 
 .popup_content-passage p{
-    font-size: 18px;
+    font-size: 20px;
     padding: 5px 20px 20px;
     margin-top: 10px;
     text-align: justify;
